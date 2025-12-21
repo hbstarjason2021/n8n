@@ -23,6 +23,6 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |-
-          git remote add space https://tenfyzhong:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/tenfyzhong/n8n-free
+          git remote add space https://hbstarjason:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/hbstarjason/n8n
           git push space main --force
           echo "Successfully synced to Hugging Face Space!"
