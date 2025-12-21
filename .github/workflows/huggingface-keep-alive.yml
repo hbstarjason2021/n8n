@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Huggingface Keep-Alive Ping
         run: |
-          curl "${{ vars.HF_SPACE_URL }}"
+          curl "${{ secrets.HF_SPACE_URL }}"
